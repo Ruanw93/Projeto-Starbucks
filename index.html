@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <img src="./logo/logo (1).png" alt="logo starbucks" class="logo">
+
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>It's not just Coffee<br>
+                It's <span class="texto1" id="cor1">Starbucks</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti<br>
+                odit aperiam illum odio voluptatum ea nisi iure vero. Neque tempore<br>
+                sequi nisi, enem vel amnis cumque delectus odit.
+            </p>
+
+            <a href="https://www.facebook.com/StarbucksBrasil"><button class="myButton" ><span class="texto-botao">Deixe o seu Like!</span></button></a>
+        </div>
+
+        <div class="caixa-img">
+            <img src="./logo/img1.png" alt="copo grande" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./logo/img-pequena1.png" alt="copo pequeno-1" class="copo-pequeno verde">
+
+        <img src="./logo/img-pequena2.png" alt="copo pequeno-2" class="copo-pequeno amarelo">
+
+        <img src="./logo/img-pequena3.png" alt="copo pequeno-3" class="copo-pequeno rosa">
+    </div>
+
+</body>
+
+<script>
+    let texto1 = document.querySelector(".texto1")
+    let myButton = document.querySelector(".myButton")
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+    myButton.addEventListener("click", () => {
+        console.log("Botão Clicado")
+    })
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./logo/img1.png"
+        circulo.style.background = "#017143"
+        myButton.style.background = "#017143"
+        document.getElementById("cor1").style.color = "#017143"
+        console.log("Botão Clicado")
+    })
+
+    amarelo.addEventListener("click", () => {
+        imgCopo.src = "./logo/img2.png"
+        circulo.style.background = "#e1aea8"
+        myButton.style.background = "#e1aea8"
+        document.getElementById("cor1").style.color = "#e1aea8"
+        console.log("Botão Clicado")
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./logo/img3.png"
+        circulo.style.background = "#d6347e"
+        myButton.style.background = "#d6347e"
+        document.getElementById("cor1").style.color = "#d6347e"
+        console.log("Botão Clicado")
+    })
+
+
+
+</script>
+
+
+</html>
